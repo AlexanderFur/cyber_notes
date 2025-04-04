@@ -16,6 +16,7 @@ Dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /A
 pause
 ```
 
+---
 ## VMCreate.exe.config
 Save the code as "VMCreate.exe.config and save it in 
 >	C:\Program Files\Hyper-V
@@ -34,6 +35,7 @@ to fix an error where you can't "quick create"
 </configuration>
 ```
 
+---
 ## Allocate more resources 
 Type these commands into cmd(Admin):
 
@@ -41,6 +43,7 @@ Type these commands into cmd(Admin):
 
 >	$ bcdedit /enum
 
+---
 ## Move Virtual Disk
 - Press Ctrl+x on the folder containing the virtual disk -file(s)
 	- Paste it in your desired folder
@@ -50,7 +53,7 @@ Type these commands into cmd(Admin):
 	- Go to "HardDive" > paste the full, new path of the virtual disk
 	- Remove the """'s" > "Apply" > "OK" 
 
-
+---
 ## Hotkeys
 ### Virtual Machine Connection Key Combinations
 With Hyper-V we now have the "Virtual Machine Connection" to use when interacting with a virtual machine (unlike Virtual Server which used "VMRC").  The Virtual Machine Connection window wraps the standard Remote Desktop Client and uses this to connect to the virtual machine.  As such - we are now using the Remote Desktop key combinations.  Here is a brief summary of the key combinations that can be used with the Virtual Machine Connection:
@@ -73,6 +76,8 @@ You can change the release key combination (CTRL + ALT + LEFT ARROW) by going to
 
 If you use the Virtual Machine Connection under an existing Remote Desktop Connection (not recommended - but I do it all the time) the Remote Desktop Connection will grab all of these key combinations before the Virtual Machine Connection gets to see them (even the release key combination).  To deal with this you will need to change the Hyper-V Server setting to allow Windows key combinations to go to the virtual machine, change the release key combination to something other than CTRL + ALT + LEFT ARROW, and use the toolbar button or Action menu of the Virtual Machine Connection to send CTRL + ALT + DEL to the virtual machine.
 
+-------------------------------------------------------------------------
+
 # GitHub
 ## Create a new repository on the command line:
 
@@ -88,6 +93,7 @@ If you use the Virtual Machine Connection under an existing Remote Desktop Conne
 
 >	git push -u origin main
 
+---
 ## …or push an existing repository from the command line
 
 >	git remote add origin https://github.com/AlexanderFur/obsidian_notes.git
@@ -96,6 +102,7 @@ If you use the Virtual Machine Connection under an existing Remote Desktop Conne
 
 >	git push -u origin main
 
+---
 ## Everyday use:
 >	git status
 
@@ -105,7 +112,7 @@ If you use the Virtual Machine Connection under an existing Remote Desktop Conne
 
 >	git push
 
-
+------------------------------------------------------
 # Python
 ## ABC -Formelen
 
@@ -183,6 +190,8 @@ else:
 
 ```
 
+----------------------------------------------
+
 # Kali Linux
 ## General
 
@@ -194,7 +203,7 @@ else:
 	# Run OpenVPN with the specified configuration file
 	sudo openvpn /home/kali/Downloads/MorraDiStjeler.ovpn
 
-
+---
 #### Ultimate Update
 
 	#!/bin/zsh
@@ -227,7 +236,7 @@ else:
 	
 	echo "System update and upgrade complete!"
 
-
+---
 ### Uninstall a .deb -file
 To uninstall a .deb file using the command line, you can use the "dpkg" command and the "--purge" option.
 
@@ -246,13 +255,18 @@ If you want to remove the package and its dependencies that are no longer needed
 This will remove the package, but it will keep the configuration files. If you want to remove the package and its configuration files, you can use the "purge" option instead of "remove".
 
 >	$ sudo apt-get purge package_name 
+
+---
 ### Make Executable
 Make it runable for all users:
 
 >	$ sudo chmod +x <filename.extention>
 
+---
 ### Make .sh runable from anywhere
 >	$ sudo mv '/Full/path/including/filename.sh' /usr/local/bin/
+
+----
 ### Corrupt .zsh_history -Fix
 - **Run these commands:**
 
@@ -266,6 +280,7 @@ Make it runable for all users:
 
 >	$ rm ~/.zsh_history_bad
 
+---
 ### Commands - Chrome
  
 - Install dependencies
@@ -291,6 +306,8 @@ Make it runable for all users:
 
 - Run if there are any problems with installation*
 >	$ sudo apt –fix-broken install
+
+---
 ### Extract .tar
 #### Extract '.tar.gz' -files
 
@@ -311,6 +328,7 @@ To explain a little further, tar collected all the files into one package, commu
 
 >	$ tar -xvzf community_images.tar.gz -C some_custom_folder_name
 
+---
 #### Extract '.tar.xz' -files
 
 Install "xz" using the 
@@ -324,17 +342,20 @@ Debian/Ubuntu Linux users
 To decompress filename. tar. xz file run: 
 >	$ sudo xz -d -v 'filename'.tar.xz
 
+---
 #### Extract '.tar' -files
 To untar a file in Linux, use the
 >	$ sudo tar -xvf 'filename.tar'
 
 This command extracts the contents of tar files, which are commonly used in Linux for file compression.
 
+---
 ### Oh My Zsh!
 #### Installation (Curl)
 Run as root:
 >	$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+---
 #### Plugins
 
 ##### Auto-Suggestions
@@ -354,6 +375,7 @@ plugins=(
 >[!tip] Tutorial
 >	https://www.youtube.com/watch?v=DmpMgTL6R9A
 
+---
 ##### zsh-synax-highlighting
 1. Clone this repository in oh-my-zsh's plugins directory:
 >	$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -366,7 +388,7 @@ plugins=( [plugins...] zsh-syntax-highlighting)
 >[!TIP] Tutorial
 >	https://www.youtube.com/watch?v=DmpMgTL6R9A
 
-
+---
 ## Hotkeys
 ### General Shortcuts
 | Keyboard Shortcuts | Description                                               |
@@ -393,6 +415,7 @@ plugins=( [plugins...] zsh-syntax-highlighting)
 | Ctrl + Alt + D     | Using this shortcut, we can minimize all windows.         |
 | Alt + F8           | With the help of this shortcut, we can resize the window. |
 
+---
 ### Screenshot shortcuts
 
 | Keyboard shortcut           | Description                                                                            |
@@ -404,6 +427,7 @@ plugins=( [plugins...] zsh-syntax-highlighting)
 | Ctrl + Alt + Print Screen   | With the help of this shortcut, we can take a screenshot of a window to the clipboard. |
 | Shift + Ctrl + Alt + R      | Using this shortcut, we can record a screencast.                                       |
 
+---
 ### Terminal shortcuts
 | Keyboard shortcut | Description                         |
 | ----------------- | ----------------------------------- |
@@ -419,6 +443,8 @@ plugins=( [plugins...] zsh-syntax-highlighting)
 | Alt+Shift+S       | Name a tab                          |
 | Ctrl + Tab        | Switch between Tabs                 |
 | Ctrl + Shit + P   | Preferences...                      |
+
+---
 ### Workspace shortcuts
 | Keyboard shortcut      | Description                                                             |
 | ---------------------- | ----------------------------------------------------------------------- |
@@ -427,6 +453,7 @@ plugins=( [plugins...] zsh-syntax-highlighting)
 | Shift + Ctrl + Alt + ↑ | Using this shortcut, we can move the window one workspace up.           |
 | Shift + Ctrl + Alt +↓  | Using this shortcut, we can move the window one workspace down.         |
 
+---
 ## Hydra
 ### Post Web Form
 #### Flags
@@ -449,6 +476,7 @@ Below is a more concrete example Hydra command to brute force a POST login form:
 
 >	$ sudo hydra -l < username > -P < wordlist > 10.10.6.152 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
 
+---
 ### SSH
 #### Flags
 | Flag   | Description                            |
@@ -466,15 +494,19 @@ will run with the following arguments:
 - It will try the passwords in the passwords.txt file  
 - There will be four threads running in parallel as indicated by -t 4
 
+---
 ## Nmap
 ### Scans
 #### Full scan - TCP connect
 For monitoring:
 > 	$ sudo nmap -A -p- -T4 -sT -Pn
+
+---
 #### Full Scan - TCP SYN
 For simulation/pentesting:
 > 	$ sudo nmap -A -p- -T4 -sS -Pn
 
+------------------------------------------------------------
 # Exploits and Vulnerabilities
 ## CVE-2025-29927 - Next.js
 
@@ -494,11 +526,10 @@ Add header to get-request (right under "Host" in BurpSuite):
 - Next.js 12.x should upgrade to 12.3.5
 
 
-
-
-
 >[!LINK] Link  
 >	https://nvd.nist.gov/vuln/detail/CVE-2025-29927
+
+------------------------------------------------------
 
 # Logs 
 ## Type of Logs
@@ -513,6 +544,8 @@ Add header to get-request (right under "Host" in BurpSuite):
 | Audit Logs       | The Audit logs provide detailed information on the system changes and user events. These logs are helpful for compliance requirements and can play a vital role in security monitoring as well.  | - Data Access events<br>- System Change events<br>- User Activity events<br>- Policy Enforcement events                                           |
 | Network Logs     | Network logs provide information on the network’s outgoing and incoming traffic. They play crucial roles in troubleshooting network issues and can also be handy during incident investigations. | - Incoming Network Traffic events<br>- Outgoing Network Traffic events<br>- Network Connection Logs - Network Firewall Logs                       |
 | Access Logs      | The Access logs provide detailed information about the access to different resources. These resources can be of different types, providing us with information on their access.                  | - Webserver Access Logs<br>- Database Access Logs - Application Access Logs<br>- API Access Logs                                                  |
+
+--------------------------------
 
 # Visual Studio Code
 ## Hotkeys
@@ -529,6 +562,8 @@ Add header to get-request (right under "Host" in BurpSuite):
 - Step Out: Shift+F11
     
 - Toggle Breakpoint: F9
+
+---
 ### Editing shortcuts
 - Cut Line: Ctrl+X
     
@@ -553,10 +588,14 @@ Add header to get-request (right under "Host" in BurpSuite):
 - Select All Occurrences: Ctrl+Shift+L
     
 - Select Word: Ctrl+D
+
+---
 ### Emmet shortcuts
 - Expand Abbreviation: Ctrl+E / Tab
     
 - Wrap with Abbreviation: Ctrl+Shift+A
+
+---
 ### General shortcuts
 - Command Palette: Ctrl+Shift+P / F1
     
@@ -573,6 +612,8 @@ Add header to get-request (right under "Host" in BurpSuite):
 - Close Folder: Ctrl+K F
     
 - Split Editor: Ctrl+\
+
+---
 ### Integrated Git shortcuts
 - Open Git: Ctrl+Shift+G
     
@@ -580,6 +621,7 @@ Add header to get-request (right under "Host" in BurpSuite):
     
 - Stage Changes: Ctrl+Shift+U
 
+---
 ### Multi-Cursor & Selection shortcuts
 - Add Cursor Above/Below: Ctrl+Alt+Up / Ctrl+Alt+Down
     
@@ -590,6 +632,7 @@ Add header to get-request (right under "Host" in BurpSuite):
 - Select All Occurrences: Ctrl+Shift+L
     
 - Add Selection to Next Find Match: Ctrl+D
+---
 ### Navigation Shortcuts
 - Go to Line: Ctrl+G
     
@@ -604,6 +647,7 @@ Add header to get-request (right under "Host" in BurpSuite):
 - Peek Definition: Alt+F12
     
 - Go to References: Shift+F12
+---
 ### Terminal shortcuts
 - New Terminal: Ctrl+
     
@@ -612,6 +656,7 @@ Add header to get-request (right under "Host" in BurpSuite):
 - Focus Previous Terminal: Ctrl+PageUp
     
 - Kill Terminal: Ctrl+Shift+ 
+---
 ### View shortcuts
 - Toggle Sidebar: Ctrl+B
     
@@ -624,7 +669,7 @@ Add header to get-request (right under "Host" in BurpSuite):
 - Toggle Zen Mode: Ctrl+K Z
     
 - Open Settings: Ctrl+,
-
+---
 # HTTP Response status codes
 ## Client Error Responses
 400 Bad Request
@@ -714,6 +759,7 @@ The server is unwilling to process the request because its header fields are too
 451 Unavailable For Legal Reasons
 The user agent requested a resource that cannot legally be provided, such as a web page censored by a government.
 
+---
 ## Informational Error Responses
 100 Continue
 This interim response indicates that the client should continue the request or ignore the response if the request is already finished.
@@ -727,6 +773,7 @@ This code was used in WebDAV contexts to indicate that a request has been receiv
 103 Early Hints
 This status code is primarily intended to be used with the Link header, letting the user agent start preloading resources while the server prepares a response or preconnect to an origin from which the page will need resources.
 
+---
 ## Redirection Messages
 300 Multiple Choices
 In agent-driven content negotiation, the request has more than one possible response and the user agent or user should choose one of them. There is no standardized way for clients to automatically choose one of the responses, so this is rarely used.
@@ -755,6 +802,7 @@ The server sends this response to direct the client to get the requested resourc
 308 Permanent Redirect
 This means that the resource is now permanently located at another URI, specified by the Location response header. This has the same semantics as the 301 Moved Permanently HTTP response code, with the exception that the user agent must not change the HTTP method used: if a POST was used in the first request, a POST must be used in the second request.
 
+---
 ## Server Error Response
 500 Internal Server Error
 The server has encountered a situation it does not know how to handle. This error is generic, indicating that the server cannot find a more appropriate 5XX status code to respond with.
@@ -789,6 +837,7 @@ The client request declares an HTTP Extension (RFC 2774) that should be used to 
 511 Network Authentication Required
 Indicates that the client needs to authenticate to gain network access.
 
+---
 ## Successful responses
 
 200 OK
@@ -826,6 +875,7 @@ Used inside a <dav:propstat> response element to avoid repeatedly enumerating th
 226 IM Used (HTTP Delta encoding)
 The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
 
+---
 
 # Windows
 ## DISKUTIL
@@ -854,6 +904,7 @@ You can also follow the steps below in CMD/Powershell (*admin privilege might be
 - Forces the deletion of diskpart
 >	$ Delete partition override
 
+---
 ### Resize removeable volume
    
 Watch this Video: 
@@ -874,8 +925,7 @@ You can also follow the steps below in CMD/Powershell (*admin privilege might be
 - Cleans the volume
 >	$ Clean
 
-
-
+---
 # WordPress
 ## Fixes and how to's
 ### Korrupt database
@@ -884,6 +934,7 @@ Feilmeldingen sier at mySQL har blitt avsluttet på feil måte. Mest sannsynligv
 >Hvis dere får dette problemet (lokalt, dette skjer ikke i prod) så må dere følge denne videoen:
 > https://www.youtube.com/watch?v=84IOtc05TuA](https://www.youtube.com/watch?v=84IOtc05TuA)
 
+---
 ### Make Cross
 #### Step 1: Create the Basic Layout
  Open Elementor
@@ -896,6 +947,8 @@ Feilmeldingen sier at mySQL har blitt avsluttet på feil måte. Mest sannsynligv
 	- In the left column add a Heading Widget (e.g., "OM") and Text Editor Widget (e.g., "Neal Ashley Contrad").
 	- In the right column, add an Image Widget (for the eyes icon) and some Text Widgets for the description.
 	- Below that, add a Contact Form Widget (if you are using a plugin like WPForms or Elementor Forms).
+
+---
 #### Step 2: Add the Horizontal Line
 - Drag a Divider Widget
 	- Find the Divider Widget in Elementor.
@@ -908,6 +961,7 @@ Feilmeldingen sier at mySQL har blitt avsluttet på feil måte. Mest sannsynligv
 - Go to the Style tab:
 	- Change Color to Black (#000000).
 	- Change Gap to 0 (so it sticks to the section).
+---
 #### Step 3: Add the Vertical Line
 - Drag Another Divider Widget
 	- Add another Divider Widget but place it inside the left column (where the "OM" text is).
@@ -919,6 +973,7 @@ Feilmeldingen sier at mySQL har blitt avsluttet på feil måte. Mest sannsynligv
 	- Set Position to Absolute
 	- Set Vertical Orientation to Middle.
 	- Adjust the left margin to position it correctly.
+---
 #### Step 4: Adjust Spacing for Proper Alignment
 - Set Column Padding/Margin
 - Click on the Left Column → Advanced Tab:
@@ -929,15 +984,17 @@ Feilmeldingen sier at mySQL har blitt avsluttet på feil måte. Mest sannsynligv
 	- Click the Responsive Mode icon at the bottom.
 	- Switch between Tablet and Mobile views.
 	- Adjust margins/padding if needed.
+---
 #### Step 5: Save and Publish
 - Click Update to save changes.
 - Preview the page to make sure the lines align correctly.
+---
 #### Optional: Alternative Adjustments
 - If the vertical line is not long enough, increase its Height.
 - If you want more control, use Custom CSS (see Method 3).
 - For more styling, add a Box Shadow to the section for depth.
 - Now, you should have a clean crossing line structure that looks like the design in your image!
-
+---
 ### Make custom roles
 Follow the video below:
 
@@ -947,6 +1004,7 @@ Follow the video below:
 
 [![https://www.youtube.com/watch?v=_HE875kKo3k](https://www.youtube.com/watch?v=_HE875kKo3k "https://www.youtube.com/watch?v=_HE875kKo3k")]
 
+---
 ### Migrate Website - phpMyAdmin
 - Last ned /wp-content og we-config.php fra ønsket side
 - Backup site files via File Manager
@@ -964,6 +1022,7 @@ Follow the video below:
 	- Upload/replace wp-content folder in File Manager
 	- Update config.php file with correct details
 	- Find and replace all image/file paths to new URL
+---
 ### Migrate website to Hostinger
 - Add website
 	- Wordpress
@@ -977,6 +1036,7 @@ Follow the video below:
 	- Check info
 - goto phpMyAdmin 
 	- wp_options - Set correct "home" and "siteurl" (url of new website)
+---
 ### The Blank Page Problem
 - Delete default pages, create new ones and make sure to "edit with elementor" 
 - Set the page template to "Elementor canvas" (can also be done from quick edit)  
@@ -986,8 +1046,9 @@ Follow the video below:
 	- Click readings
 	- Change your homepage displays from "Your latest post" to "A static page" and Choose your page
 	- Choose which page you want to set as home page and save changes 
+---
 ### The_Content
 - First in order to fix the infamous "the_content" error you must download twenty nineteen theme, then go to wherever the theme is.
 - When doing this locally it will be in "C:\xampp\htdocs\wordpress\wp-content\themes\twentynineteen"
 - Here you can find the index.php file and on a line above <?php get_footer; ?> you must write: <?php the_content; ?>
-
+---
