@@ -1,5 +1,5 @@
 # HyperV
-## Install
+## Installation
 Copy the code, select "All files" and Save as hyperv.bat. Run as admin
 
 ```
@@ -95,8 +95,9 @@ If you use the Virtual Machine Connection under an existing Remote Desktop Conne
 
 ---
 ## …or push an existing repository from the command line
+( To find correct url, see footnote: [^1])
 
->	git remote add origin https://github.com/AlexanderFur/obsidian_notes.git
+>	git remote add origin https://github.com/AlexanderFur/obsidian_notes.git 
 
 >	git branch -M main
 
@@ -104,13 +105,17 @@ If you use the Virtual Machine Connection under an existing Remote Desktop Conne
 
 ---
 ## Everyday use:
->	git status
+>	git status 
 
->	git add <file (or '.' for current dir)>
+>	git add <filename (or type a quotationless '.' for all of the current dir)>
 
 >	git commit -m < Message >
 
 >	git push
+
+To see and compare all changes:
+
+>	 git diff HEAD
 
 ------------------------------------------------------
 # Python
@@ -1052,3 +1057,11 @@ Follow the video below:
 - When doing this locally it will be in "C:\xampp\htdocs\wordpress\wp-content\themes\twentynineteen"
 - Here you can find the index.php file and on a line above <?php get_footer; ?> you must write: <?php the_content; ?>
 ---
+
+[^1]: To find the correct url:
+	- Go to github.com, click your profile picture and select "Your Profile".
+	- Select "Repository" and hit the green "New" button
+	- Set a repo -name, and set the desired settings and click "Create Repository"
+	- Then, go to the new repository, click "Code..", select the "local" -tab, and select "Https" - That's the correct URL
+
+[^2]: Add the '-u' -flag for comprehensive status
