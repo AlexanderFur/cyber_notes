@@ -1104,6 +1104,6 @@ Follow the video below:
 	- Go to github.com, click your profile picture and select "Your Profile".
 	- Select "Repository" and hit the green "New" button
 	- Set a repo -name, and set the desired settings and click "Create Repository"
-	- Then, go to the new repository, click "Code..", select the "local" -tab, and select "Https" - That's the correct URL
+	- Then, go to the new repository, click "Code..", select the "local" -tab, and select "Https" (or SSH, obviusly) - That's the correct URL 
 
 [^2]: Add the '-u' -flag for comprehensive status
