@@ -398,9 +398,11 @@ This command extracts the contents of tar files, which are commonly used in Linu
 ---
 ### Oh My Zsh!
 #### Installation (Curl)
-Run as root:
->	$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+>	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+#### Uninstallation
+>	uninstall_oh_my_zsh
 ---
 #### Plugins
 
