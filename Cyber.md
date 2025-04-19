@@ -406,9 +406,9 @@ This command extracts the contents of tar files, which are commonly used in Linu
 ---
 #### Plugins
 
-##### Auto-Suggestions
+##### zsh-auto-suggestions
 1. Clone this repository into $ZSH_CUSTOM/plugins (by default ~/.oh-my-zsh/custom/plugins)
->	$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+>	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 2. Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
 
@@ -426,7 +426,7 @@ plugins=(
 ---
 ##### zsh-synax-highlighting
 1. Clone this repository in oh-my-zsh's plugins directory:
->	$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+>	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 2. Activate the plugin in ~/.zshrc:
 ```
