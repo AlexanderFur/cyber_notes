@@ -358,11 +358,11 @@ Make it runable for all users:
 #### Extract '.tar.gz' -files
 
 Type: 
->	$ man tar 
+>	man tar 
 
 for more information, but this command should do the trick:
 
->	$ sudo tar -xvzf community_images.tar.gz
+>	sudo tar -xvzf community_images.tar.gz
 
 To explain a little further, tar collected all the files into one package, community_images.tar. The gzip program applied compression, hence the ".gz" extension. So the command does a couple things:
 
@@ -372,26 +372,26 @@ To explain a little further, tar collected all the files into one package, commu
 - v: makes tar talk a lot. Verbose output shows you all the files being extracted.
 - To extract into a custom folder, add the "-C" -option with a folder name of your choice:
 
->	$ tar -xvzf community_images.tar.gz -C some_custom_folder_name
+>	tar -xvzf community_images.tar.gz -C some_custom_folder_name
 
 ---
 #### Extract '.tar.xz' -files
 
 Install "xz" using the 
->	$ dnf install xz
+>	dnf install xz
 
 on a CentOS/RHEL/Fedora Linux.
 
 Debian/Ubuntu Linux users
->	$ sudo apt install xz-utils 
+>	sudo apt install xz-utils 
 
 To decompress filename. tar. xz file run: 
->	$ sudo xz -d -v 'filename'.tar.xz
+>	sudo xz -d -v 'filename'.tar.xz
 
 ---
 #### Extract '.tar' -files
 To untar a file in Linux, use the
->	$ sudo tar -xvf 'filename.tar'
+>	sudo tar -xvf 'filename.tar'
 
 This command extracts the contents of tar files, which are commonly used in Linux for file compression.
 
