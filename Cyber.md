@@ -450,7 +450,7 @@ plugins=( [plugins...] zsh-syntax-highlighting)
 
 Replace the ‘oldusername’ with the name of the user you want to use.
 
-![[Pasted image 20250509042030.png]]
+![[pic1.png]]
 
 This will display us a few details of the user along with the userid.
 
@@ -462,18 +462,18 @@ Replace the ‘oldusername’ with the name of the user you want to change.
 - oldusername: The current username you want to change.
 - newusername: The new username you wish to assign to the user.
 
-![[Pasted image 20250509042223.png]]
+![[pic2.png]]
 
 This command will change the username of the oldusername to the newusername but will not change the files and userID of the user.
 
 3. To change the UserID
-We use ‘****usermod’**** command along with ‘-u’ parameter in order to change the userid of a particular user.
+We use ‘usermod’ command along with ‘-u’ parameter in order to change the userid of a particular user.
 >	usermod -u 1234 newusername
 
-- Replace the ****newusername**** with the username you want to change the id of.
-- Replace ****1234**** with the id you want to set for the user.
+- Replace the newusername with the username you want to change the id of.
+- Replace 1234 with the id you want to set for the user.
+![[pic3.png]]
 
-![[Pasted image 20250509042555.png]]
 This command will change the userid of the user from the default one to 1234.
 
  4. Conclusion
