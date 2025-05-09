@@ -440,8 +440,10 @@ plugins=( [plugins...] zsh-syntax-highlighting)
 
 ### Change username in Kali Linux
 
->[!NOTE] This has to be done as root user:
->	sudo su
+>[!NOTE] Has to be logged in as root. To be able to do this, set a password for root:
+>	sudo passwd root
+>	
+> Then log out and back in with root username, and the password you have created
 
 1. To get the use id of a user:
 >	cat /etc/passwd | grep oldusername
