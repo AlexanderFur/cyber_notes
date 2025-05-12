@@ -82,7 +82,7 @@ If you use the Virtual Machine Connection under an existing Remote Desktop Conne
 
 ## Create a new repository on the command line:
 
->	git init
+>	git init 
 
 >	git add < files >
 
