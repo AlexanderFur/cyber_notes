@@ -108,6 +108,8 @@ If you use the Virtual Machine Connection under an existing Remote Desktop Conne
 ## Everyday use:
 >	git status 
 
+>	git pull
+
 >	git add <filename (or type a quotationless '.' for all of the current dir)>
 
 >	git commit -m < Message >
