@@ -86,7 +86,7 @@ If you use the Virtual Machine Connection under an existing Remote Desktop Conne
 
 >	git add < files >
 
->	git commit -m first commit
+>	git commit -m "first commit"
 
 >	git branch -M main
 
@@ -96,8 +96,8 @@ If you use the Virtual Machine Connection under an existing Remote Desktop Conne
 
 ---
 ## …or push an existing repository from the command line
-( To find correct url, see footnote: [^1])
 
+Replace URL with the correct one
 >	git remote add origin https://github.com/AlexanderFur/obsidian_notes.git 
 
 >	git branch -M main
