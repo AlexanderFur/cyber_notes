@@ -533,6 +533,7 @@ Changing usernames and User IDs in Kali Linux using the usermod command is a str
 | Alt+Shift+S       | Name a tab                          |
 | Ctrl + Tab        | Switch between Tabs                 |
 | Ctrl + Shit + P   | Preferences...                      |
+| Ctrl + u          | Empty line                          |
 
 ---
 ### Workspace shortcuts
@@ -598,7 +599,7 @@ For simulation/pentesting:
 
 ------------------------------------------------------------
 ## Mousepad
-### Open files as tabs in same window
+### Open files in separate windows
 >	mousepad < file name1 > | mousepad < file name2 >
 
 # Exploits and Vulnerabilities
@@ -1294,3 +1295,6 @@ Follow the video below:
 |Extend selection to end of note|`Ctrl+Shift+End`|
 |Extend selection one page up|`Shift+Page Up`|
 |Extend selection one page down|`Shift+Page Down`|
+## Setup
+### Plugins
+#### heading-level-indent
