@@ -77,7 +77,6 @@ You can change the release key combination (CTRL + ALT + LEFT ARROW) by going to
 If you use the Virtual Machine Connection under an existing Remote Desktop Connection (not recommended - but I do it all the time) the Remote Desktop Connection will grab all of these key combinations before the Virtual Machine Connection gets to see them (even the release key combination).  To deal with this you will need to change the Hyper-V Server setting to allow Windows key combinations to go to the virtual machine, change the release key combination to something other than CTRL + ALT + LEFT ARROW, and use the toolbar button or Action menu of the Virtual Machine Connection to send CTRL + ALT + DEL to the virtual machine.
 
 -------------------------------------------------------------------------
-
 # GitHub
 
 ## Create a new repository on the command line:
@@ -598,6 +597,9 @@ For simulation/pentesting:
 > 	$ sudo nmap -A -p- -T4 -sS -Pn
 
 ------------------------------------------------------------
+## Mousepad
+### Open files as tabs in same window
+>	mousepad < file name1 > | mousepad < file name2 >
 
 # Exploits and Vulnerabilities
 ## CVE-2025-29927 - Next.js
