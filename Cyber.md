@@ -1297,9 +1297,7 @@ Follow the video below:
 |Extend selection one page down|`Shift+Page Down`|
 ## Setup
 ### Plugins
-#### heading-level-indent
-
-# Termux
+ - heading-level-indent
 # WGET
 
 
@@ -1329,7 +1327,6 @@ Follow the video below:
 
 Step 1: Find the Server’s IP Address
 - On the host computer, run:
->	ifconfig   (Linux)
 
 >	ipconfig   (Windows CMD)
 
