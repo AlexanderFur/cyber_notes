@@ -1298,6 +1298,8 @@ Follow the video below:
 ## Setup
 ### Plugins
  - heading-level-indent
+ - Style Settings
+ - Git
 # WGET
 
 
