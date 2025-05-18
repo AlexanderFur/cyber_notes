@@ -1300,4 +1300,7 @@ Follow the video below:
 #### heading-level-indent
 
 # Termux
-## Jadda
+# WGET
+Download a Folder and all its conents:
+>	wget -r -np -nH --cut-dirs=1 -R "index.html*" http://example.com/folder/
+
