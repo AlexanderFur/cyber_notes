@@ -1268,6 +1268,8 @@ Start WinSCP. [Login dialog](https://winscp.net/eng/docs/ui_login) will appear. 
 If you cannot authenticate to the server and use Windows 10 _Developer mode_, make sure that your OpenSSH server does not conflict with an internal SSH server used by the _Developer mode_. You may need to turn off the _SSH Server Broker_ and _SSH Server Proxy_ Windows services. Or run your OpenSSH server on a different port than 22.
 
 ---
+## JuiceSSH
+
 # WordPress
 ## Fixes and how to's
 ### Korrupt database
