@@ -1549,10 +1549,10 @@ You’ll be doing the following:
 
 #### 🔹 Step 1.1: Install OpenSSH Server
 1. Press `Win + I` to open **Settings**.
-2. Go to **Apps > Optional Features**.
-3. Scroll down and click **Add a feature**.
+2. Go to **System > Optional Features**.
+3. In the top, you see **Add an optional feature**: click **View Features**.
 4. Search for **OpenSSH Server**.
-5. Click **Install**.
+5. Click **Next** > **Add**.
 
 > 🕒 Wait for installation to finish.
 
@@ -1570,10 +1570,8 @@ You’ll be doing the following:
 #### 🔹 Step 2.1: Get Your Local IP
 1. Press `Win + R`, type `cmd`, and press **Enter**.
 2. In the Command Prompt, type:
-
-   ```
-   ipconfig
-   ```
+   
+   >	ipconfig
 
 3. Look for **IPv4 Address** under your active network adapter.  
    Example: `192.168.1.100`
@@ -1585,16 +1583,16 @@ You’ll be doing the following:
 ### 🔥 PART 3: Allow SSH Through the Windows Firewall
 
 #### 🔹 Step 3.1: Add SSH Rule
-1. Press `Win + S`, type **Windows Defender Firewall**, and open it.
-2. Click **Advanced Settings** (on the left).
+1. Press `Win + S`, type **Windows Defender Firewall with Advanced Security**, and open it.
+2. Click **Inbound Rules** (on the left).
 3. In **Inbound Rules**, click **New Rule...**
 4. Choose:
    - **Type**: Port
    - **Protocol**: TCP
    - **Port**: `22`
-5. Allow the connection.
-6. Apply to **Private** and **Domain** networks (not Public unless needed).
-7. Name the rule something like **SSH Server**.
+1. Click **Next** > **Allow the connection** > **Next**.
+2. Apply to **Private** and **Domain** networks (not Public unless needed). Click **Next**.
+3. Name the rule something like **SSH Server**.
 
 ---
 
@@ -1606,7 +1604,7 @@ You’ll be doing the following:
 
 #### 🔹 Step 4.2: Create an Identity (optional but recommended)
 1. Open JuiceSSH.
-2. Tap the **menu (☰)** > **Identities** > `+` (plus).
+2. Tap the **Manage Connections** > **Identities** > `+` (plus).
 3. Fill in:
    - **Nickname**: Windows
    - **Username**: Your Windows account username  
