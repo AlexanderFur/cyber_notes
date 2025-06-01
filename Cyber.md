@@ -1512,7 +1512,7 @@ Happy customizing! 🎨
 
 ---
 ### Profiles
-#### Dark+
+#### Dark+ 
 ```json
 {
   "name": "Dark+",
