@@ -1358,28 +1358,74 @@ Scroll to the `"schemes"` section or add a new one:
 ```json
 
 "schemes": [
-{
-    "name": "MyCustomDark",
-    "background": "#0C0C0C",
-    "foreground": "#F8F8F2",
-    "black": "#1E1E1E",
-    "red": "#E06C75",
-    "green": "#98C379",
-    "yellow": "#E5C07B",
-    "blue": "#61AFEF",
-    "purple": "#C678DD",
-    "cyan": "#56B6C2",
-    "white": "#ABB2BF",
-    "brightBlack": "#5C6370",
-    "brightRed": "#BE5046",
-    "brightGreen": "#98C379",
-    "brightYellow": "#D19A66",
-    "brightBlue": "#61AFEF",
-    "brightPurple": "#C678DD",
-    "brightCyan": "#56B6C2",
-    "brightWhite": "#FFFFFF"
-}
-],
+
+        {
+
+            "name": "MyCustomDark",
+
+            "background": "#0C0C0C",
+
+            "foreground": "#FFFFFF",
+
+            "selectionBackground": "#FFFFFF",
+
+            "cursorColor": "#FFFFFF",
+
+  
+
+            /* colors */
+
+  
+
+            "black": "#1E1E1E",
+
+            "brightBlack": "#5C6370",
+
+  
+
+            "white": "#ABB2BF",
+
+            "brightWhite": "#FFFFFF",
+
+  
+
+            "blue": "#61AFEF",
+
+            "brightBlue": "#61AFEF",
+
+  
+
+            "cyan": "#56B6C2",
+
+            "brightCyan": "#56B6C2",
+
+  
+
+            "green": "#98C379",
+
+            "brightGreen": "#98C379",
+
+  
+
+            "purple": "#C678DD",
+
+            "brightPurple": "#C678DD",
+
+  
+
+            "red": "#E06C75",
+
+            "brightRed": "#BE5046",
+
+  
+
+            "yellow": "#E5C07B",
+
+            "brightYellow": "#D19A66"
+
+        }
+
+    ],
 
 
 ```
@@ -1463,6 +1509,34 @@ Then reference it by name in the profile:
   
 
 Happy customizing! 🎨
+
+---
+### Profiles
+#### Dark+
+```json
+{
+  "name": "Dark+",
+  "background": "#1E1E1E",
+  "foreground": "#D4D4D4",
+  "black": "#000000",
+  "red": "#CD3131",
+  "green": "#0DBC79",
+  "yellow": "#E5E510",
+  "blue": "#2472C8",
+  "purple": "#BC3FBC",
+  "cyan": "#11A8CD",
+  "white": "#E5E5E5",
+  "brightBlack": "#666666",
+  "brightRed": "#F14C4C",
+  "brightGreen": "#23D18B",
+  "brightYellow": "#F5F543",
+  "brightBlue": "#3B8EEA",
+  "brightPurple": "#D670D6",
+  "brightCyan": "#29B8DB",
+  "brightWhite": "#E5E5E5"
+}
+
+```
 # OpenSSH
 ## Windows
 ### Installing SFTP/SSH Server
