@@ -1212,6 +1212,257 @@ It's worth noting that PowerShell doesn't auto-update by default. You need to ma
 >
 Additionally, you can enable Microsoft Update for PowerShell. This allows you to get the latest PowerShell 7 updates through the traditional Microsoft Update management flow. 
 
+### Edit PowerShell Apparence
+#### ✨ Customizing PowerShell 7 Appearance in Windows Terminal via settings.json
+
+  
+
+This guide walks you through editing the `settings.json` file to customize the appearance of PowerShell 7 in Windows Terminal.
+
+  
+
+---
+
+  
+
+##### 📌 Prerequisites
+
+  
+
+- Windows Terminal installed (from Microsoft Store or GitHub)
+
+- PowerShell 7 installed
+
+- Basic familiarity with JSON editing
+
+- A text editor (VS Code recommended)
+
+  
+
+---
+
+  
+
+#### 🔍 Step-by-Step Guide
+
+  
+
+##### 1. **Open Windows Terminal Settings as JSON**
+
+  
+
+1. Launch **Windows Terminal**.
+
+2. Click the dropdown arrow next to the tab bar.
+
+3. Select **"Settings"** — this opens the GUI settings page.
+
+4. At the bottom left, click **"Open JSON file"**.
+
+  
+
+Alternatively, open the file directly:
+
+> 	C:\Users\<YourUsername>\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+
+  
+
+---
+
+  
+
+##### 2. **Locate the PowerShell 7 Profile**
+
+  
+
+Search for the section that looks like this in **settings.json under **"profiles" -> "list":
+
+  
+
+```json
+
+{
+
+  "guid": "{your-guid}",
+
+  "name": "PowerShell 7",
+
+  "commandline": "pwsh.exe",
+
+  "hidden": false
+
+}
+
+```
+
+  
+
+---
+
+  
+
+##### 3. **Edit Appearance Settings**
+
+  
+
+Add or modify the following keys inside the PowerShell 7 profile object:
+
+  
+
+```json
+
+{
+
+  "name": "PowerShell 7",
+
+  "source": "Windows.Terminal.PowershellCore",
+
+  "colorScheme": "One Half Dark",
+
+  "fontFace": "Cascadia Code PL",
+
+  "fontSize": 12,
+
+  "acrylicOpacity": 0.85,
+
+  "useAcrylic": true,
+
+  "backgroundImage": "C:/Path/To/Image.png",
+
+  "backgroundImageOpacity": 0.2,
+
+  "backgroundImageStretchMode": "fill"
+
+}
+
+```
+
+  
+
+> 💡 **Note:** Update the image path and appearance settings to your preference.
+
+  
+
+---
+
+  
+
+##### 4. **Customize or Add Color Schemes**
+
+  
+
+Scroll to the `"schemes"` section or add a new one:
+
+  
+
+```json
+
+"schemes": [
+{
+    "name": "MyCustomDark",
+    "background": "#0C0C0C",
+    "foreground": "#F8F8F2",
+    "black": "#1E1E1E",
+    "red": "#E06C75",
+    "green": "#98C379",
+    "yellow": "#E5C07B",
+    "blue": "#61AFEF",
+    "purple": "#C678DD",
+    "cyan": "#56B6C2",
+    "white": "#ABB2BF",
+    "brightBlack": "#5C6370",
+    "brightRed": "#BE5046",
+    "brightGreen": "#98C379",
+    "brightYellow": "#D19A66",
+    "brightBlue": "#61AFEF",
+    "brightPurple": "#C678DD",
+    "brightCyan": "#56B6C2",
+    "brightWhite": "#FFFFFF"
+}
+],
+
+
+```
+
+  
+
+Then reference it by name in the profile:
+
+  
+
+```json
+
+"colorScheme": "MyCustomDark"
+
+```
+
+
+
+---
+
+  
+
+##### 5. **Save and Restart**
+
+  
+
+- Save the `settings.json` file.
+
+- Restart Windows Terminal to see your changes in effect.
+
+  
+
+---
+
+  
+
+#### ✅ Tips
+
+  
+
+- Fonts like **Fira Code**, **Cascadia Code PL**, or **JetBrains Mono** support programming ligatures and enhance the look.
+
+- You can use `"padding"` to control spacing, e.g., `"padding": "12, 8, 12, 8"`.
+
+- Use `"cursorShape": "filledBox"` to change the cursor type.
+
+  
+
+---
+
+  
+
+#### 🧪 Troubleshooting
+
+  
+
+- 🛑 JSON parse error? Make sure all commas and brackets are correctly placed.
+
+- ⚠️ Appearance not applying? Ensure you’re editing the correct profile (`"name": "PowerShell 7"`).
+
+- ⚠️ Make sure to add the line which references the scheme by name to all profiles (see step 4)
+
+  
+
+---
+
+  
+
+#### 📚 References
+
+  
+
+- [Windows Terminal Docs](https://learn.microsoft.com/en-us/windows/terminal/)
+
+- [PowerShell 7](https://github.com/PowerShell/PowerShell)
+
+  
+
+---
+
+  
+
+Happy customizing! 🎨
 # OpenSSH
 ## Windows
 ### Installing SFTP/SSH Server
