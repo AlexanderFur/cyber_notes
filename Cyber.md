@@ -1182,6 +1182,35 @@ You can also follow the steps below in CMD/Powershell (*admin privilege might be
 ---
 
 
+## PowerShell
+### Upgrade
+
+PowerShell can be upgraded from within PowerShell using the winget command-line tool, which is a package manager for Windows. Here's how to do it:
+
+1. Open PowerShell as administrator. This is necessary to install the updated version of PowerShell.
+
+Search for the PowerShell package using winget. Execute the following command:
+
+>	winget search Microsoft.PowerShell
+
+This command will display available PowerShell packages, including the latest version.
+
+2. Install the latest version of PowerShell. If an update is available, use the following command to install it:
+
+>	winget install --id Microsoft.PowerShell --source winget --exact --silent --scope machine
+
+This command will download and install the newest version of PowerShell.
+
+3. Alternatively, you can use the Install-Module command to update PowerShellGet, which is a module that helps manage other PowerShell modules.
+
+>	Install-Module PowerShellGet -Force
+
+After this initial switch, you'll be able to use Update-Module PowerShellGet to update PowerShellGet in the future.
+
+>[!NOTE]
+It's worth noting that PowerShell doesn't auto-update by default. You need to manually trigger the update process using the methods described above.
+>
+Additionally, you can enable Microsoft Update for PowerShell. This allows you to get the latest PowerShell 7 updates through the traditional Microsoft Update management flow. 
 
 # OpenSSH
 ## Windows
