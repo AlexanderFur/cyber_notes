@@ -1141,22 +1141,22 @@ Follow this Video:
 You can also follow the steps below in CMD/Powershell (*admin privilege might be required*):
 
 - Enter the Service
->	$ Diskpart
+>	Diskpart
 
 - List available disks
->	$ List disk
+>	List disk
 
 - Use the selected disk
->	$ Select disk number of disk
+>	Select disk number of disk
 
 - Lists available partitions on the selected disk
->	$ List partition
+>	List partition
 
 - Selects the given available partition for further use
->	$ Select partition < number of recovery partition >
+>	Select partition < number of recovery partition >
 
 - Forces the deletion of diskpart
->	$ Delete partition override
+>	Delete partition override
 
 ---
 ### Resize removeable volume
@@ -1168,16 +1168,16 @@ Watch this Video:
 You can also follow the steps below in CMD/Powershell (*admin privilege might be required):
 
 - Enters the Service
->	$ Diskpart
+>	Diskpart
 
 - Lists available volumes
->	$ List volume
+>	List volume
 
 - Selects which of the available
->	$ Select <volume_name>
+>	Select <volume_name>
 
 - Cleans the volume
->	$ Clean
+>	Clean
 
 ---
 
