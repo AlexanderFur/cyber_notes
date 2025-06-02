@@ -1537,6 +1537,54 @@ Happy customizing! 🎨
 }
 
 ```
+#### My Theme - blue
+```json
+{
+
+            "background": "#5ea8e1",
+
+            "black": "#000000",
+
+            "blue": "#bfc6d4",
+
+            "brightBlack": "#545353",
+
+            "brightBlue": "#3B8EEA",
+
+            "brightCyan": "#29B8DB",
+
+            "brightGreen": "#11ff00",
+
+            "brightPurple": "#D670D6",
+
+            "brightRed": "#F14C4C",
+
+            "brightWhite": "#E5E5E5",
+
+            "brightYellow": "#F5F543",
+
+            "cursorColor": "#000000",
+
+            "cyan": "#6bdfff",
+
+            "foreground": "#000000",
+
+            "green": "#0DBC79",
+
+            "name": "My Theme - blue",
+
+            "purple": "#BC3FBC",
+
+            "red": "#CD3131",
+
+            "selectionBackground": "#72cf7b",
+
+            "white": "#E5E5E5",
+
+            "yellow": "#E5E510"
+
+        },
+```
 # OpenSSH
 ## Windows
 ### Installing SFTP/SSH Server
