@@ -1547,7 +1547,7 @@ Happy customizing! 🎨
 
             "blue": "#bfc6d4",
 
-            "brightBlack": "#F5F543",
+            "brightBlack": "#725f0a",
 
             "brightBlue": "#a8c5e6",
 
@@ -1575,7 +1575,7 @@ Happy customizing! 🎨
 
             "purple": "#BC3FBC",
 
-            "red": "#CD3131",
+            "red": "#ff7d7d",
 
             "selectionBackground": "#72cf7b",
 
