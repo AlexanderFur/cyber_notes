@@ -1549,7 +1549,7 @@ Happy customizing! 🎨
 
             "brightBlack": "#F5F543",
 
-            "brightBlue": "#3B8EEA",
+            "brightBlue": "#a8c5e6",
 
             "brightCyan": "#29B8DB",
 
