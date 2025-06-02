@@ -1539,15 +1539,15 @@ Happy customizing! 🎨
 ```
 #### My Theme - blue
 ```json
-{
+        {
 
-            "background": "#5ea8e1",
+            "background": "#2D7D9A",
 
             "black": "#000000",
 
             "blue": "#bfc6d4",
 
-            "brightBlack": "#545353",
+            "brightBlack": "#F5F543",
 
             "brightBlue": "#3B8EEA",
 
@@ -1559,7 +1559,7 @@ Happy customizing! 🎨
 
             "brightRed": "#F14C4C",
 
-            "brightWhite": "#E5E5E5",
+            "brightWhite": "#ac4a4a",
 
             "brightYellow": "#F5F543",
 
