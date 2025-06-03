@@ -1585,6 +1585,58 @@ Happy customizing! 🎨
 
         },
 ```
+#### Palenight
+```json
+        {
+
+            "background": "#292D3E",
+            "foreground": "#A6ACCD",
+            "black":      "#000000",
+            "red":        "#F07178",
+            "green":      "#C3E88D",
+            "yellow":     "#FFCB6B",
+            "blue":       "#82AAFF",
+            "purple":     "#C792EA",
+            "cyan":       "#89DDFF",
+            "white":      "#D0D0D0",
+            "brightBlack":  "#434758",
+            "brightRed":    "#FF8B92",
+            "brightGreen":  "#DDFFA7",
+            "brightYellow": "#FFE585",
+            "brightBlue":   "#9CC4FF",
+            "brightPurple": "#E1ACFF",
+            "brightCyan":   "#A3F7FF",
+            "name": "Palenight",
+            "brightWhite":  "#FFFFFF"
+
+        },
+
+```
+#### Tokyo Storm Gogh
+```json
+        {
+            "background": "#24283B",
+            "foreground": "#C0CAF5",
+            "black":      "#1D202F",
+            "red":        "#F7768E",
+            "green":      "#9ECE6A",
+            "yellow":     "#E0AF68",
+            "blue":       "#7AA2F7",
+            "purple":     "#BB9AF7",
+            "cyan":       "#7DCFFF",
+            "white":      "#A9B1D6",
+            "brightBlack":  "#414868",
+            "brightRed":    "#F7768E",
+            "brightGreen":  "#9ECE6A",
+            "brightYellow": "#E0AF68",
+            "brightBlue":   "#7AA2F7",
+            "brightPurple": "#BB9AF7",
+            "brightCyan":   "#7DCFFF",
+            "brightWhite":  "#C0CAF5",
+            "name": "Tokyo Storm Gogh"
+        }
+
+```
 # OpenSSH
 ## Windows
 ### Installing SFTP/SSH Server
@@ -2058,3 +2110,16 @@ You’ll be doing the following:
 - Use **key-based authentication** instead of a password.
 - Change the SSH port from 22 to a custom one in the SSH server config.
 - Set up **fail2ban** equivalents for Windows (like IPBan).
+
+# JavaScript
+## Datatyper
+
+- string: "i am a string"
+- number: 1
+- boolean: true
+- boolean: null
+- boolean: undefined
+- date: 03.06.2025
+- objects: {}
+- arrays: []
+## Objects - example
