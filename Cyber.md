@@ -2,7 +2,7 @@
 ## Installation
 Copy the code, select "All files" and Save as hyperv.bat. Run as admin
 
-```
+```batch
 pushd "%~dp0"
 
 dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum >hyper-v.txt
