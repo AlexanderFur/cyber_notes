@@ -54,8 +54,8 @@
  - heading-level-indent
  - Style Settings
  - Remote - WSL
-## Themes
-### Ace Palenight
+## Snippets
+### acePalenight
 ```css
 /* Palenight Background */
 body {
@@ -88,4 +88,105 @@ a {
   color: #82AAFF;
 }
 
+```
+### header_color
+```CSS
+/* Obsidian header colors */
+
+.markdown-preview-view h1 {
+
+  color: #C678DD; /* Plum Purple */
+
+}
+
+  
+
+.markdown-preview-view h2 {
+
+  color: #EBCB8B; /* Muted Yellow */
+
+}
+
+  
+
+.markdown-preview-view h3 {
+
+  color: #E06C75; /* Coral Red */
+
+}
+
+  
+
+.markdown-preview-view h4 {
+
+  color: #98C379; /* Leaf Green */
+
+}
+
+  
+
+.markdown-preview-view h5 {
+
+  color: #56B6C2; /* Soft Cyan */
+
+}
+
+  
+
+.markdown-preview-view h6 {
+
+  color: #61AFEF; /* Sky Blue */
+
+}
+```
+
+### header-colorize
+```CSS
+/* Colorize headers in editor (Live Preview / Source Mode) */
+
+.cm-header-1 {
+
+  color: #C678DD; /* Plum Purple */
+
+}
+
+  
+
+.cm-header-2 {
+
+  color: #EBCB8B; /* Muted Yellow */
+
+}
+
+  
+
+.cm-header-3 {
+
+  color: #E06C75; /* Coral Red */
+
+}
+
+  
+
+.cm-header-4 {
+
+  color: #98C379; /* Leaf Green */
+
+}
+
+  
+
+.cm-header-5 {
+
+  color: #56B6C2; /* Soft Cyan */
+
+}
+
+  
+
+.cm-header-6 {
+
+  color: #61AFEF; /* Sky Blue */
+
+}
 ```
