@@ -190,3 +190,6 @@ a {
 
 }
 ```
+
+## Theme
+- Obsidian Nord
