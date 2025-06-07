@@ -120,3 +120,10 @@
     
 - Open Settings: Ctrl+,
 ---
+
+# Setup
+## Extentions
+
+- Ace Palenight
+- WSL
+- 
