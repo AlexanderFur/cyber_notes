@@ -279,3 +279,41 @@ echo "System update and upgrade complete!"
 
 # Install Metasploit Framework
 >	sudo apt install -y metasploit-framework
+
+# Kali-Tools
+
+- kali-tools-detect
+- kali-tools-forensics
+- kali-tools-web
+- kali-tools-wireless
+- kali-tools-social-engineering
+- kali-tools-sniffing-spoofing
+- kali-tools-reverse-engineering
+- kali-tools-respond
+- kali-tools-post-exploitation
+- kali-tools-passwords
+- kali-tools-information-gathering
+- kali-tools-identify
+- kali-tools-fuzzing
+- kali-tools-database
+- kali-tools-bluetooth
+
+Install them all:
+```zsh
+sudo apt update && sudo apt install -y \
+kali-tools-detect \
+kali-tools-forensics \
+kali-tools-web \
+kali-tools-wireless \
+kali-tools-social-engineering \
+kali-tools-sniffing-spoofing \
+kali-tools-reverse-engineering \
+kali-tools-respond \
+kali-tools-post-exploitation \
+kali-tools-passwords \
+kali-tools-information-gathering \
+kali-tools-identify \
+kali-tools-fuzzing \
+kali-tools-database \
+kali-tools-bluetooth
+```
