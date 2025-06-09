@@ -122,3 +122,158 @@ This guide will walk you through creating a bootable USB drive for installing or
 
 ---
 
+
+# 🔥 Create and Use a Live USB Kali Linux on Windows 11
+
+  
+
+This guide will walk you through creating a bootable **Live USB of Kali Linux** on a **Windows 11** system using **Rufus**.
+
+  
+
+---
+
+  
+
+## 🧰 Requirements
+
+  
+
+- USB Flash Drive (Minimum 8GB, 16GB+ recommended)
+
+- Kali Linux ISO file  
+
+  👉 [Download here](https://www.kali.org/get-kali/)
+
+- Rufus (Tool to create bootable USBs)  
+
+  👉 [Download here](https://rufus.ie)
+
+  
+
+---
+
+  
+
+## 📝 Step-by-Step Guide
+
+  
+
+### Step 1: Download the Kali Linux ISO
+
+  
+
+- Visit the [Kali Downloads Page](https://www.kali.org/get-kali/)
+
+- Select the **Live ISO** (e.g., `kali-linux-2024.2-live-amd64.iso`)
+
+- Download the file to your computer
+
+  
+
+---
+
+  
+
+### Step 2: Download and Launch Rufus
+
+  
+
+- Download **Rufus** from [https://rufus.ie](https://rufus.ie)
+
+- Run Rufus (no installation required)
+
+  
+
+---
+
+  
+
+### Step 3: Plug in Your USB Drive
+
+  
+
+- Insert your USB stick (⚠️ This will erase all data on it)
+
+  
+
+---
+
+  
+
+### Step 4: Create Bootable Kali USB
+
+  
+
+1. In **Rufus**:
+
+   - **Device**: Select your USB drive
+
+   - **Boot selection**: Click *SELECT* and choose the Kali ISO
+
+   - **Partition scheme**:
+
+     - Choose **MBR** for legacy BIOS/UEFI
+
+     - Choose **GPT** for UEFI (modern systems)
+
+   - **File system**: Keep default (FAT32 or NTFS)
+
+   - Optional: Set a volume label like "KaliLive"
+
+  
+
+2. Click **Start**:
+
+   - Choose **"Write in ISO Image mode"** when prompted
+
+   - Confirm data loss warning
+
+  
+
+---
+
+  
+
+### Step 5: Boot Into Kali Linux
+
+  
+
+1. **Restart your PC**
+
+2. Enter the **boot menu** during startup (commonly F12, ESC, F2, DEL, F10)
+
+3. Select your USB drive to boot from
+
+4. Choose from the Kali boot menu:
+
+   - **Live (amd64)** to run without installing
+
+   - **Live with persistence** (if configured)
+
+  
+
+---
+
+  
+
+## 💾 Optional: Enable Persistence
+
+  
+
+To save changes/files across reboots:
+
+- Rufus alone doesn't support persistence
+
+- Use Kali's tools (via Linux) or tools like **Ventoy + persistence plugin**
+
+- Ask for a guide if you want to set this up
+
+  
+
+---
+
+  
+ ## ✅ Done!
+
+  
