@@ -126,4 +126,4 @@
 
 - Ace Palenight
 - WSL
-- 
+- Prettier

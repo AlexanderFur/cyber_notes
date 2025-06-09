@@ -53,7 +53,7 @@
 ## Plugins
  - heading-level-indent
  - Style Settings
- - Remote - WSL
+ - WSL
 ## Snippets
 ### acePalenight
 ```css
