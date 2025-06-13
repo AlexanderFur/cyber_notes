@@ -244,3 +244,6 @@ kali-tools-bluetooth
 
   
 
+
+# Update
+>	wsl --update
