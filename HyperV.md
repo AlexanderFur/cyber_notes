@@ -77,3 +77,98 @@ You can change the release key combination (CTRL + ALT + LEFT ARROW) by going to
 If you use the Virtual Machine Connection under an existing Remote Desktop Connection (not recommended - but I do it all the time) the Remote Desktop Connection will grab all of these key combinations before the Virtual Machine Connection gets to see them (even the release key combination).  To deal with this you will need to change the Hyper-V Server setting to allow Windows key combinations to go to the virtual machine, change the release key combination to something other than CTRL + ALT + LEFT ARROW, and use the toolbar button or Action menu of the Virtual Machine Connection to send CTRL + ALT + DEL to the virtual machine.
 
 -------------------------------------------------------------------------
+
+
+
+# 🐧 Ubuntu VM Out of Space (Hyper-V on Windows 11)
+
+> **Problem:** Ubuntu LTS VM shows "out of space" even though the **Windows 11 host** has plenty (e.g., 247GB free).
+
+---
+
+## 🔍 Likely Causes
+
+### 1. 🧱 Fixed Virtual Disk Size (VHDX)
+- The VM uses a virtual hard disk file (VHDX) with a **fixed or limited size** (e.g., 20GB).
+- Ubuntu fills this virtual disk regardless of free space on the host.
+
+**How to check:**
+- Open **Hyper-V Manager**
+- Right-click your Ubuntu VM → **Settings** → **Hard Drive**
+- Note the **Virtual Hard Disk Path** and inspect its size
+
+---
+
+### 2. 📦 Ubuntu Partition Is Full
+- Even if VHDX has free space, the **Ubuntu partition inside it** might be full.
+- Common after expanding the VHDX without expanding the filesystem.
+
+**Check with:**
+>     df -h
+Look for >     /, >     /home, or >     /var partitions near 100%.
+
+---
+
+### 3. 📉 Dynamic Disk Not Expanding Properly
+- Dynamic disks **don’t grow automatically** inside Ubuntu.
+- You must **manually expand both** the VHDX and the internal Ubuntu partition.
+
+---
+
+## 🛠️ How to Fix It
+
+### ✅ A. Expand the Virtual Hard Disk (VHDX)
+
+1. Shut down the VM.
+2. Open **Hyper-V Manager**:
+   - Right-click VM → **Settings** → **Hard Drive** → **Edit**
+   - Choose **Expand** (e.g., from 40GB → 100GB)
+3. Boot into Ubuntu.
+
+> 🔔 But the partition inside Ubuntu still needs to grow!
+
+---
+
+### ✅ B. Resize Ubuntu Partition
+
+1. Boot VM using a **Live Ubuntu ISO** (mount it in Hyper-V).
+2. Launch terminal:
+>     sudo apt update
+>     sudo apt install gparted
+>     sudo gparted
+3. Use GParted GUI to **expand your main partition** (>     /dev/sda1, etc.)
+4. Apply changes → reboot normally.
+
+---
+
+### ✅ C. Clean Up Ubuntu Space (Temporary Relief)
+
+>     sudo apt clean
+>     sudo apt autoremove
+>     du -sh /*
+Look for large folders like >     /var/log or >     /home and clean up.
+
+---
+
+## 💡 Pro Tips
+
+- Prefer **LVM** partitions for easier resizing in the future.
+- Monitor space usage with:
+>     ncdu /
+- Avoid using **Quick Create** in Hyper-V — it may use small disk sizes by default.
+
+---
+
+## 🧠 Summary
+
+| Area       | Action                                      |
+|------------|---------------------------------------------|
+| VHDX Size  | Expand via Hyper-V Manager                  |
+| Partition  | Resize using GParted (Live ISO)             |
+| Cleanup    | Use >     apt clean, >     du, or >     ncdu            |
+| Prevention | Use dynamic disk, LVM, or larger disk sizes |
+
+---
+
+🗂️ Markdown ready for Obsidian  
+💬 Let me know if you need help resizing or mounting ISO step-by-step!
