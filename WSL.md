@@ -26,8 +26,6 @@ This guide walks you through installing **WSL with Kali Linux** on **Windows 11*
 
 ## 🧰 Step-by-Step Instructions
 
-  
-
 ### 1. Open PowerShell as Administrator
 
 - Right-click **PowerShell 7.5**
