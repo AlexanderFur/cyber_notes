@@ -16,6 +16,7 @@ alias lad="ls -lashp | grep /"
 alias ld="ls -lshp | grep /"
 ```
 
+
 Add these in the bottom of .zshrc
 
 ## Plugins
